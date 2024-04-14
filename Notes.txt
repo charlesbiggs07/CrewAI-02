@@ -1,0 +1,13 @@
+
+***
+In many programming contexts, the `verbose` parameter is used to control the level of output detail provided by a
+program, often for debugging or informational purposes. This parameter typically accepts an integer or boolean
+value, where a higher integer value results in more detailed output.
+
+- **0**: Minimal verbosity. Typically, this level will output nothing or only critical errors necessary
+ for basic operation.
+- **1**: Moderate verbosity. This level might include important operational messages that provide insight into
+ the flow of execution without too much detail.
+- **2**: Detailed verbosity. At this level, the program will likely output detailed debugging information,
+ tracing computations, and operations step-by-step.
+***

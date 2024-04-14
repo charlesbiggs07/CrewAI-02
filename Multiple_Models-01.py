@@ -1,13 +1,15 @@
 from crewai import Agent, Task, Crew, Process
 from langchain_community.llms import Ollama
 
+
+###  Researched with Mistral, written with llama2
 llm = 'llama2'
 #llm='openhermes'
-#llm='mistral'
+llm2='mistral'
 ollama_llm = Ollama(model=llm)
+ollama_llm2 = Ollama(model=llm2)
 topic = input("Topic?")
 print(topic)
-
 # Agents
 researcher = Agent(
     role=f"{topic} Researcher",
@@ -24,7 +26,7 @@ writer = Agent(
     backstory='You are a world-famous writer.',
     verbose=True,
     allow_delegation=False,
-    llm=ollama_llm,
+    llm=ollama_llm2,
     )
 
 # Tasks
